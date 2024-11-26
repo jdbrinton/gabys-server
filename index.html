@@ -3,72 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Website</title>
+    <title>Play Sound on Button Press</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        nav {
-            background: #444;
-            color: white;
-            text-align: center;
-            padding: 0.5rem;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 2rem;
-            text-align: center;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>This is a simple HTML website template for learning purposes.</p>
-    </section>
-    <section id="services">
-        <h2>Services</h2>
-        <p>We offer web design, development, and consulting services.</p>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
-    </section>
-    <footer>
-        <p>&copy; 2024 My Website. All Rights Reserved.</p>
-    </footer>
+    <h1>Play Sound Example</h1>
+    <button id="playSoundButton">Play Sound</button>
+    <audio id="audio" src="sound.mp3"></audio>
+
+    <script>
+        // Reference the button and audio element
+        const button = document.getElementById('playSoundButton');
+        const audio = document.getElementById('audio');
+
+        // Add a click event listener to play the sound
+        button.addEventListener('click', () => {
+            audio.play();
+        });
+    </script>
+
+
+
+Welcome to My Website
+
+<br />
+
+About Services Contact
+
+<strong>
+About Me
+</strong>
+
+
+<script>
+% my java script
+</script>
+
+<h1 style="color:#ff0000;">
+This is a simple HTML website template for learning purposes.
+</h1>
+
+<h2>
+Services
+</h2>
+<p>
+We offer web design, development, and consulting services.
+</p>
+
+Contact
+<br />
+Email: example@example.com
+
+© 2024 My Website. All Rights Reserved.
+
 </body>
 </html>
